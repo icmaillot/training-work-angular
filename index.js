@@ -19,6 +19,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
+app.get("/", (req, res) => {
+    res.send("salut les amis")
+})
+
 app.use('/products', productRouter);
 app.use('/users', userRouter);
 app.use('/auth', authRouter);
