@@ -24,6 +24,8 @@ app.get("/", (req, res) => {
     res.send("salut les amis")
 })
 
+//
+
 app.use('/products', productRouter);
 app.use('/users', userRouter);
 app.use('/auth', authRouter);
