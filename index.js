@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.get("/", (req, res) => {
+app.all("/", (req, res) => {
     res.send("salut les amis")
 })
 
